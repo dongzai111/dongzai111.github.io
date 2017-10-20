@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords"  content="铁路, 客运段, 动车组">
+    <meta name="theme-color" content="#000000">
+
+    <title>中国铁路高速列车 - </title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/gimg/train.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2017/04/23/CRHI/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">HOME</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">关于我们</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/gm/">G29风采</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/19/">十九大专题</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">标签</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from
+     * $toggle/$collapse will break global delegation.
+     *
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post_onvif10.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#CRH" title="CRH">CRH</a>
+                        
+                        <a class="tag" href="/tags/#转载" title="转载">转载</a>
+                        
+                    </div>
+                    <h1>中国铁路高速列车</h1>
+                    
+                    
+                    <h2 class="subheading">CRH Introduction</h2>
+                    
+                    <span class="meta">Posted by wikipedia on April 23, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h2 id="中国铁路高速列车和谐号">中国铁路高速列车（和谐号）</h2>
+<blockquote>
+  <p>（CRH，China Railway High-speed，是中国铁路总公司高速铁路列车（动车组）的品牌名称。
+并非所有中国高速列车都属于中国铁路高速（CRH）系列</p>
+</blockquote>
+
+<p>CRH系列高速电力动车组均采用动力分散式，运行时速达200千米以上，最高可达400千米以上</p>
+
+<p>中华人民共和国铁道部由2004年起先后向加拿大庞巴迪、日本川崎重工业、法国阿尔斯通、德国西门子公司等外国企业购买高速铁路车辆技术，以引进国外先进技术并吸收的方式，由中国中车(当时尚未合并，机车分别由南车、北车制造)旗下的车辆制造企业生产，达到一定程度的国产化，并再以此为基础进行自主创新研发。铁道部将所有引进国外技术、联合设计生产的CRH系列动车组均命名为和谐号。这些高速列车在2007年4月18日实施中国铁路第六次大提速后投入正式运营。</p>
+
+<h3 id="现有的crh系列高速动车组共分为7个系列以生产厂商进行划分">现有的CRH系列高速动车组共分为7个系列，以生产厂商进行划分：</h3>
+<ul>
+  <li>CRH1 — 以庞巴迪Regina C2008为基础，由合资公司青岛四方庞巴迪铁路运输设备有限公司生产。</li>
+  <li>CRH2 — 以川崎重工业新干线E2-1000型动车组为基础，中国中车集团青岛四方机车车辆股份有限公司负责国内生产。</li>
+  <li>CRH3 — 以西门子ICE3为基础，由中国中车集团唐山轨道客车有限责任公司负责国内生产。</li>
+  <li>CRH5 — 以阿尔斯通Pendolino动车组为基础，由中国中车集团长春轨道客车股份有限公司负责国内生产。</li>
+  <li>CRH6 — 该系列列车是中国自主研发设计，由中国中车集团南京浦镇车辆有限公司负责国内生产。</li>
+  <li>CJ1 — 该系列列车是中国自主研发设计，由中国中车集团长春轨道客车股份有限公司负责国内生产。</li>
+  <li>CRH380 — 该系列列车是中国自主研发设计，由中国中车集团旗下的青岛四方机车车辆股份有限公司、长春轨道客车股份有限公司和唐山轨道客车股份有限公司负责国内生产。</li>
+</ul>
+
+<blockquote>
+  <p>而每个系列（除CRH380、CJ1外）之内再按列车编组、速度等方式划分为9大类型，以9个英文字母（A、B、C、D、E、F、G、H、S）表示：</p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td>英文字母</td>
+      <td>设计速度（km/h）</td>
+      <td>编组形式</td>
+      <td>车型代表</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>200～250</td>
+      <td>8节编组座车</td>
+      <td>CRH1A、CRH2A、CRH5A、CRH6A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>200～250</td>
+      <td>16节大编组座车</td>
+      <td>CRH1B、CRH2B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>300～350</td>
+      <td>8节编组座车</td>
+      <td>CRH2C、CRH3C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>300～350</td>
+      <td>16节大编组座车</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>200～250</td>
+      <td>16节大编组卧铺动车</td>
+      <td>CRH1E、CRH2E</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>160</td>
+      <td>8节编组城际动车组</td>
+      <td>CRH6F</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>200～250</td>
+      <td>8节编组耐高寒座车</td>
+      <td>CRH2G、CRH5G</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>200～250</td>
+      <td>8节编组耐风沙及高寒座车</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>140</td>
+      <td>4节编组城际动车组</td>
+      <td>CRH6S</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>CRH380现有4种型号： CRH380A； CRH380B； CRH380C； CRH380D。 
+    » 每个型号下又有4个子型号，代号如下</p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td>英文字母</td>
+      <td>编组形式</td>
+      <td>车型代表</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>8节编组座车</td>
+      <td>CRH380A、CRH380B、CRH380C、CRH380D</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>8节编组耐高寒座车</td>
+      <td>CRH380BG</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>8节编组耐风沙及高寒座车</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>16节大编组座车</td>
+      <td>CRH380AL、CRH380BL、CRH380CL、CRH380DL</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="技术发展">技术发展</h2>
+
+<p>在引进国外技术以前，中国一直进行自主研发高速铁路列车，也取得不少的成果（例如中华之星电动车组），但中国交流传动等核心技术仍未成熟，高速动车组的九大核心技术包括总成、车体、转向架、牵引变流、牵引控制、牵引变压、牵引电机、列车网络控制和制动系统等，尚未为中国国内企业所掌握，国产的高速动车组在技术和可靠性方面均无法与国外现今列车相比。另一方面研究过程也需要大量时间。铁道部时任发言人张曙光表示，由于历史原因，中国铁路技术装备的整体水平只相当于发达国家1970至1980年代的水平，高速动车组技术尚处于研发阶段，如果依靠自身力量，则可能需要十几年或更长时间追赶，也无法适应目前的经济发展[5]。2004年，中华人民共和国国务院及铁道部确定了推进铁路技术装备现代化“引进先进技术、联合设计生产、打造中国品牌”的方针。而实现铁路“跨越式发展”的重点任务即为对时速200千米以上的高速列车引进整体技术，实行“消化吸收再创新”，并在法律上取得自主知识产权。换言之铁道部采取了“市场换技术”的策略。</p>
+
+<h2 id="技术引进">技术引进</h2>
+
+<p>2004年4月9日，国务院召开了关于铁路机车车辆装备现代化会议，并下发了《研究铁路机车车辆装备有关问题的会议纪要》，确定了推进铁路技术装备现代化“引进先进技术、联合设计生产、打造中国品牌”的总体方针，明确了中国铁路技术装备现代化的方向、方法和目标。</p>
+
+<p>2004年6月17日：铁道部展开为用于中国铁路第六次大提速、时速200千米级别的第一轮高速动车组技术引进招标，《人民铁道》和中国采购与招标网同时发布招标公告《时速200千米铁路动车组项目投标邀请书》，公告中明确投标主体是国内企业，但它必须取得国外先进技术的支持：“在中华人民共和国境内合法注册的，具备铁路动车组制造能力，并获得拥有成熟的时速200千米铁路动车组设计和制造技术的国外合作方技术支持的中国制造企业（含中外合资企业）”。其中招标文件中明确规定了三项原则：一是关键技术必须全面转让，二是价格必须世界最低，三是必须使用中国品牌。多家世界上掌握成熟高速动车组设计和制造技术的企业，包括德国西门子、法国阿尔斯通、日本川崎重工和加拿大庞巴迪等，最初曾希望利用在华合资公司参与动车组招标，但遭到了中国铁道部的明确拒绝。中方坚持外方向中国企业全面转让技术，特别是系统集成、交流传动等核心技术，让国内企业自己掌握核心技术；并要求国外合作方为国内企业提供技术服务与培训，提高国内企业设计、制造和质量管理人员的技术水平，从而最终实现国产化。中国国内铁路装备厂商可自由选择国外合作伙伴，投标前国外厂商必须先与中国国内制造企业签定完善的技术转让协议，以使中国有关机车车辆制造企业能够全面、系统地掌握国外先进技术，从而加快中国铁路现代化的步伐。
+在这一轮投标中，动车组订单共140列、分为7包，每包20列。通过竞争和由采购方代表、采购代理代表以及来自科研机构的经济、技术、法律专家组成的评标委员会依据评标办法综合评审。最终由中国北方机车车辆工业集团所属长春轨道客车股份有限公司与法国阿尔斯通公司合作、中国南方机车车辆工业集团所属南车青岛四方机车车辆股份有限公司与日本川崎重工合作、加拿大庞巴迪公司在青岛的合资企业青岛四方庞巴迪铁路运输设备有限公司（BSP）三家企业中标，分别获得了3包（60列）、3包（60列）和1包（20列）的订单[7]。德国西门子因提出高昂的转让技术、车辆造价费用（原型车每列3.5亿元人民币，技术转让费3.9亿欧元）而无法在第一轮招标获得任何订单。在首批动车组招标中，支付的技术转让金共计227亿元人民币，在招标金额中占比达51%。
+2005年11月，中国铁道部与德国西门子在“以市场换技术”的原则下签订协议，西门子因而获得60列时速300千米的高速列车订单。</p>
+
+<h2 id="自主创新">自主创新</h2>
+
+<p>2015年四方厂制造的中国标准动车组
+在引进国外高速列车先进技术后，为落实《国家中长期科学和技术发展规划纲要（2006－2020年）》的要求，通过高速铁路核心技术体系的自主创新满足中国铁路发展的需要，在2008年2月26日，中华人民共和国科技部与铁道部共同签署了《中国高速列车自主创新联合行动计划合作协议》[10]。由两部委牵头部署，联合中国科学院、清华大学、浙江大学、北京交通大学、西南交通大学等的大量院士和科研人员，从基础理论研究、方案论证，到科学试验，凝聚中国国内最优秀的科研和产业资源，建立以产学研用相结合的创新体系，研制世界上水平最高的高速列车。
+根据协议，中国高速列车自主创新联合行动计划主要有四个方面的目标[11]：
+在引进技术“消化吸收再创新”的基础上，实现自主创新，自行发展关键技术，研制时速350千米及以上高速列车；
+建立并完善具有自主知识产权的时速350千米及以上中国高速铁路技术体系，并在取得较强的国际竞争力；
+发挥科技部及铁道部两部联合优势，构建高速列车技术创新链和产业学术研究联盟，增强自主创新能力；
+促进创新技术投产，建立中国高速列车产业链和产业群，提升中国制造相关重大装备的能力。
+中华人民共和国科技部为此启动了总投资近10亿元人民币的科技计划，这也是截至目前中国科技部所支撑的计划中投资最大的一个项目。项目共设立十个课题，共汇聚了中国国内重点高校25所、一流科研院所11所、国家级实验室和工程研究中心51家，包括有院士68人、教授500余人、研究员200余人、工程技术人员上万人。此外，科技部还配合时速400千米的高速检测车和部署时速500千米高速列车预演基础研究分别安排了“863项目”和“973项目”，从而形成一系列的从基础研究到关键技术研发再到重要的装备开发的系统工程。</p>
+
+<h2 id="技术输出">技术输出</h2>
+
+<p>和谐号CRH2型电力动车组
+和谐号CRH380B型电力动车组
+2009年7月27日，相关发言人表示：目前对中国高速铁路技术非常感兴趣的国家有美国、印度、沙特阿拉伯和巴西。<br />
+7月28日，美国联邦铁路署表示，美国正就引进中国的高速铁路技术进行磋商。 <br />
+2009年10月14日，随同访华俄罗斯总理普京，俄罗斯运输部、铁路股份公司与中国铁道部签署了《关于在俄罗斯境内组织和发展快速和高速铁路运输的谅解备忘录》，计划在海参崴到伯力间采用中国技术兴建高速铁路。<br />
+中国国务院总理李克强多次在出访中向国外推销中国高铁，称其技术先进可靠，成本有国际竞争优势。在泰国、肯尼亚、越南、印度、罗马尼亚、澳洲、英国访问时都有提及，<code class="highlighter-rouge">成为最亮丽的中国制造名片</code>。<br />
+中国大陆目前制造和运营中的高速列车均为CRH（CRH，China Railway High-speed，中国铁路高速列车）系列电力动车组。该系列列车目前包括CRH1系列、CRH2系列、CRH3系列、CRH5系列、CRH6系列以及CRH380系列，均为动力分散式列车。其中CRH6系列中的部分车型为通勤运输用的中速列车。</p>
+
+<h2 id="订单统计">订单统计</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>签订合同</td>
+      <td>制造商</td>
+      <td>速度级</td>
+      <td>车型</td>
+      <td>总数（列）</td>
+      <td>总数（车厢）</td>
+      <td>总值</td>
+    </tr>
+    <tr>
+      <td>2004年10月10日</td>
+      <td>阿尔斯通/长春轨道客车</td>
+      <td>250km/h</td>
+      <td>CRH5A</td>
+      <td>3/57</td>
+      <td>24/456</td>
+      <td>6.2亿欧元</td>
+    </tr>
+    <tr>
+      <td>2004年10月12日</td>
+      <td>青岛四方庞巴迪铁路运输设备</td>
+      <td>250km/h</td>
+      <td>CRH1A</td>
+      <td>20</td>
+      <td>160</td>
+      <td>3.5亿美元</td>
+    </tr>
+    <tr>
+      <td>2004年10月20日</td>
+      <td>川崎重工/南车青岛四方机车车辆</td>
+      <td>250km/h</td>
+      <td>CRH2A</td>
+      <td>3/57</td>
+      <td>24/456</td>
+      <td>93亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2005年5月30日</td>
+      <td>青岛四方庞巴迪铁路运输设备</td>
+      <td>250km/h</td>
+      <td>CRH1A</td>
+      <td>20</td>
+      <td>160</td>
+      <td>3.5亿美元</td>
+    </tr>
+    <tr>
+      <td>2005年6月</td>
+      <td>南车青岛四方机车车辆</td>
+      <td>300k/350km/h</td>
+      <td>CRH2C第一阶段和第二阶段</td>
+      <td>30/30</td>
+      <td>240/240</td>
+      <td>82亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2005年11月20日</td>
+      <td>西门子公司/唐山轨道客车</td>
+      <td>350km/h</td>
+      <td>CRH3C</td>
+      <td>3/57</td>
+      <td>24/456</td>
+      <td>130亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2007年10月31日</td>
+      <td>青岛四方庞巴迪铁路运输设备</td>
+      <td>250km/h</td>
+      <td>CRH1B/E</td>
+      <td>20/20</td>
+      <td>320/320</td>
+      <td>10亿欧元</td>
+    </tr>
+    <tr>
+      <td>2007年11月</td>
+      <td>南车青岛四方机车车辆</td>
+      <td>250km/h</td>
+      <td>CRH2B</td>
+      <td>10</td>
+      <td>160</td>
+      <td>12亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2007年11月</td>
+      <td>南车青岛四方机车车辆</td>
+      <td>250km/h</td>
+      <td>CRH2E</td>
+      <td>6</td>
+      <td>96</td>
+      <td>9亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2008年12月6日</td>
+      <td>南车青岛四方机车车辆</td>
+      <td>250km/h</td>
+      <td>CRH2E</td>
+      <td>14</td>
+      <td>224</td>
+      <td>21亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2009年9月23日</td>
+      <td>长春轨道客车</td>
+      <td>250km/h</td>
+      <td>CRH5A</td>
+      <td>30</td>
+      <td>240</td>
+      <td>48亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2009年3月16日</td>
+      <td>唐山轨道客车/长春轨道客车</td>
+      <td>380km/h</td>
+      <td>CRH380BL</td>
+      <td>70/30</td>
+      <td>1,120/480</td>
+      <td>382亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2009年9月28日</td>
+      <td>南车青岛四方机车车辆</td>
+      <td>380km/h</td>
+      <td>CRH380A/AL</td>
+      <td>40/100</td>
+      <td>320/1600</td>
+      <td>450亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2009年9月28日</td>
+      <td>青岛四方庞巴迪铁路运输设备</td>
+      <td>380km/h</td>
+      <td>CRH380D/DL</td>
+      <td>20/60</td>
+      <td>160/960</td>
+      <td>274亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2009年9月28日</td>
+      <td>长春轨道客车</td>
+      <td>380km/h</td>
+      <td>CRH380B/BL/CL</td>
+      <td>40/15/25</td>
+      <td>320/240/400</td>
+      <td>235.2亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2009年9月28日</td>
+      <td>唐山轨道客车</td>
+      <td>350km/h</td>
+      <td>CRH3C</td>
+      <td>20</td>
+      <td>160</td>
+      <td>39.2亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2010年7月16日</td>
+      <td>青岛四方庞巴迪铁路运输设备</td>
+      <td>250km/h</td>
+      <td>CRH1A</td>
+      <td>40</td>
+      <td>320</td>
+      <td>52亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2010年9月14日</td>
+      <td>南车青岛四方机车车辆</td>
+      <td>250km/h</td>
+      <td>CRH2A</td>
+      <td>20</td>
+      <td>160</td>
+      <td>34亿元人民币</td>
+    </tr>
+    <tr>
+      <td>2010年10月13日</td>
+      <td>长春轨道客车</td>
+      <td>250km/h</td>
+      <td>CRH5A</td>
+      <td>20</td>
+      <td>160</td>
+      <td>27亿元人民币</td>
+    </tr>
+    <tr>
+      <td>共计</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>880</td>
+      <td>10,000</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="交付统计截止2012">交付统计(截止2012)</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>车型</td>
+      <td>2006年</td>
+      <td>2007年</td>
+      <td>2008年</td>
+      <td>2009年</td>
+      <td>2010年</td>
+      <td>2011年</td>
+      <td>2012年计划</td>
+      <td>共计</td>
+    </tr>
+    <tr>
+      <td>CRH1A</td>
+      <td>8</td>
+      <td>18</td>
+      <td>12</td>
+      <td>2</td>
+      <td>20</td>
+      <td>20</td>
+      <td> </td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>CRH2A</td>
+      <td>19</td>
+      <td>41</td>
+      <td> </td>
+      <td> </td>
+      <td>15</td>
+      <td>5</td>
+      <td> </td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>CRH5A</td>
+      <td> </td>
+      <td>27</td>
+      <td>29</td>
+      <td>4</td>
+      <td>30</td>
+      <td>30</td>
+      <td>10</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>CRH1B</td>
+      <td> </td>
+      <td> </td>
+      <td>4</td>
+      <td>9</td>
+      <td>7</td>
+      <td> </td>
+      <td> </td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>CRH1E</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>3</td>
+      <td>8</td>
+      <td>9</td>
+      <td> </td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>CRH2B</td>
+      <td> </td>
+      <td> </td>
+      <td>10</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>CRH2E</td>
+      <td> </td>
+      <td> </td>
+      <td>6</td>
+      <td>14</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>CRH2C</td>
+      <td> </td>
+      <td> </td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td> </td>
+      <td> </td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>CRH3C</td>
+      <td> </td>
+      <td> </td>
+      <td>7</td>
+      <td>36</td>
+      <td>37</td>
+      <td> </td>
+      <td> </td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>CRH380A</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>40</td>
+      <td> </td>
+      <td> </td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>CRH380AL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>6</td>
+      <td>94</td>
+      <td> </td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CRH380B</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>20</td>
+      <td>20</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>CRH380BL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>11</td>
+      <td>49</td>
+      <td>55</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>CRH380CL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>25</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>CRH380D</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>CRH380DL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>共计</td>
+      <td>27</td>
+      <td>86</td>
+      <td>78</td>
+      <td>88</td>
+      <td>204</td>
+      <td>217</td>
+      <td>180</td>
+      <td>880</td>
+    </tr>
+    <tr>
+      <td>累计</td>
+      <td>27</td>
+      <td>113</td>
+      <td>191</td>
+      <td>279</td>
+      <td>483</td>
+      <td>700</td>
+      <td>880</td>
+      <td>880</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="参考文献">参考文献</h2>
+<ul>
+  <li>中国迈入高铁时代（科学发展　成就辉煌）. 人民网.</li>
+  <li>中国铁路高速列车上海始发 受到市民热捧. 2007-01-28 [2012-09-17]. ……投入春运的‘中国铁路高速列车’简称‘CRH’……</li>
+  <li>中国铁路高速列车投入广铁春运 时速达160公里. 2007-01-31 [2012-09-17]. 我国时速200千米及以上动车组统一采用‘CRH’的简称，是‘中国铁路高速’（China Railway High-speed）英文的首字母缩写，意为‘中国铁路高速列车’。</li>
+  <li>第六次大提速上线运行的动车组为何叫”和谐号”. 中国经济网. 2007-04-12 [2010-05-28].</li>
+  <li>7.0 7.1 铁路将第六次提速 我国引进时速200公里机车. 新华网. 2004-09-04 [2010-09-20].</li>
+  <li>中国高铁建设大手笔:吸收四国技术 印媒眼红. 新华网. 2008-02-04 [2010-05-28].</li>
+  <li>科技部、铁道部联合签署《中国高速列车自主创新联合行动计划合作协议》. 科技部门户网站. 2008-02-27 [2010-05-28].</li>
+  <li>铁道部科技部联合深化时速350公里及以上高速列车自主创新. 中国政府网. 2008-02-29 [2011-11-22].</li>
+  <li>高铁带动我国高新技术产业大发展. 《科技日报》. 2010-09-06 [2010-09-28].</li>
+  <li>媒体称美国拟引进我国高铁技术. 新浪网. 2009-07-30 [2010-05-28].</li>
+  <li>中国将帮俄罗斯建高速铁路 加强执法合作遏制不法清关. 凤凰网. 2009-19-14 [2010-07-11].</li>
+  <li>法中企业握手互利共赢. news.xinhuanet.com. 25 October 2004.</li>
+  <li>2004年10月12日，BSP与铁道部及广州铁路（集团）签订了20列（160辆）EMU动车组. www.bsp.cn. 12 January 2006.</li>
+  <li>CRH2型动车组详细资料及分类. news.chineserailways.com. 14 December 2009.</li>
+  <li>庞巴迪：又获铁道部动车组大订单. info.traffic.hc360.com. 10 June 2005.</li>
+  <li>西门子专家进驻唐山机车车辆厂. hebei.moform.gov.cn. 15 August 2006.</li>
+  <li>BSP公司在北京签订40列EMU动车组订单. www.bsp.cn. 2 November 2007.</li>
+  <li>招商证券-中国南车-601766-动车交付高峰来临，业绩逐季增… www.docin.com.</li>
+  <li>公司与北京铁路局签订了30列CRH5型动车组采购合同. www.cccar.com.cnom.</li>
+  <li>唐车公司拿到京沪高铁动车组大订单 总金额392亿. info.china.alibaba.com. 17 March 2009.</li>
+  <li>24.0 24.1 中国南车：中标巨额合同 增厚公司业绩. www.guosen.com.cn. 30 September 2009.</li>
+  <li>长客签下235亿订单. jlrbszb.chinajilin.com.cn. 28 September 2009.</li>
+  <li>招商证券-中国北车-601299-动车组第三批高毛利率订单将陆续交付. www.docin.com.</li>
+  <li>Bombardier Sifang Awarded Fourth Contract for 40 Additional CRH1 High-Speed Trains in China. cn.bombardier.com. 16 July 2010.</li>
+  <li>中国南车：再中标动车组订单、未来高增长确定::全景证券频道. www.p5w.net. 30 September 2010.</li>
+  <li>中国北车 签订总额达52亿元重大合同. news.xinmin.cn. 13 October 2010.</li>
+</ul>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/03/11/HelloBlog/" data-toggle="tooltip" data-placement="top" title="开篇寄语">
+                        Previous<br>
+                        <span>开篇寄语</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/05/25/service/" data-toggle="tooltip" data-placement="top" title="关于提高高速铁路客运服务质量的思考">
+                        Next<br>
+                        <span>关于提高高速铁路客运服务质量的思考</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+                
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#CRH" title="CRH" rel="5">
+                                    CRH
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#转载" title="转载" rel="7">
+                                    转载
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://www.peoplerail.com/rail/index.html">人民铁道网</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "halukasama";
+    var disqus_identifier = "/2017/04/23/CRHI";
+    var disqus_url = "http://localhost:4000/2017/04/23/CRHI/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; HOME 2017
+                    <br>
+                    Theme by <a href="https://github.com/halukasama/halukasama.github.io">halukasama</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=halukasama&repo=halukasama.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="img/breg.jpg" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

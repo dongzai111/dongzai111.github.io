@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords"  content="铁路, 客运段, 动车组">
+    <meta name="theme-color" content="#000000">
+
+    <title>复兴号电力动车组 - </title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/gimg/train.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2017/06/20/CRI/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">HOME</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">关于我们</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/gm/">G29风采</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/19/">十九大专题</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">标签</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from
+     * $toggle/$collapse will break global delegation.
+     *
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post_onvif7.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#CR" title="CR">CR</a>
+                        
+                        <a class="tag" href="/tags/#转载" title="转载">转载</a>
+                        
+                    </div>
+                    <h1>复兴号电力动车组</h1>
+                    
+                    
+                    <h2 class="subheading">China Railway Introduction</h2>
+                    
+                    <span class="meta">Posted by wikipedia on June 20, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h2 id="复兴号电力动车组">复兴号电力动车组</h2>
+<blockquote>
+  <p>早期称中国标准动车组，2017年6月26日改现名）是中国铁路总公司组织中国中车自主研发，营运于中国铁路客运专线及高速铁路的电力动车组的统称[3]。该动车组现有型号列车的最高营运速度为350公里/小时，为动力分散式、交流传动的铝合金空心型材车体列车。</p>
+</blockquote>
+
+<h2 id="名称">名称</h2>
+<p>中国标准动车组研制是中国铁路总公司组织实施的重大装备研发项目，其目的是通过自主创新，构建和完善中国动车组技术标准体系，研制具有完全自主知识产权的标准化、系列化、简统化动车组产品，达到国际领先水平，满足未来发展需求。同时，通过自主创新，增强自主开发能力，锤炼铁路装备科研团队，为实现“走出去”战略目标提供有力支撑。
+中国铁路总公司将具有完全自主知识产权的中国高速铁路车辆命名为复兴号。根据中国铁路总公司总经理陆东福的说法：“在决胜全面建成小康社会、实现中华民族伟大复兴中国梦的重要历史节点，将中国标准动车组命名为‘复兴号’，代表着中国铁路在新时代坚定跟着中国共产党走、奋勇当先行的坚强决心，真实记载了中国高铁技术装备走向世界先进行列的发展历程，展示了中国铁路服务经济社会发展、创造人民生活新时空的美好愿景，也深情寄托着中国铁路人对中华民族伟大复兴的追求和期盼。”</p>
+
+<h2 id="类型">类型</h2>
+<p>复兴号动车组采用“CR+数字+两位字母”的分类方式。CR是中国铁路总公司英文China Railway的缩写。数字为速度等级代码，代表最高时速分别为200、300和400km/h，分别对应160、250和350km/h三种持续时速。数字后第一位字母是厂商代码，A代表中车青岛四方机车车辆、B代表中车长春轨道客车；最后一位字母是技术代码，F代表动力分散式、J代表动力集中式[7]。
+复兴号现有“CR400AF”和“CR400BF”两种型号。日后将根据运输市场需求逐步研发CR300和CR200系列。</p>
+
+<h2 id="研制进程">研制进程</h2>
+<p>中车四方制造的CR400AF-0207在北京环行铁道，2015年7月</p>
+
+<p>中车长客制造的CR400BF-0503驶出北京西站手帕口，2017年3月
+2012年开始，中国铁路总公司集合中国有关企业、高等院校、科研单位等展开研制工作。
+2013年6月，“中国标准”动车组项目正式启动。2013年12月，总体技术条件制定完成；2014年9月方案设计完成；
+2015年6月30日正式下线，并于当天在中国铁道科学研究院环形试验基地正式展开试验工作[3]。
+两辆标准动车组样车曾在大西客运专线试车。
+2016年7月起，两列中国标准动车组进行综合试验，在郑徐客运专线从时速200公里逐级提速至时速420公里。于7月15日，中国标准动车组成功实现了时速420公里两车交会及重联运行的目标。这是世界上首次实现拟运营高铁动车组列车时速420公里交会和重联运行。
+2016年8月15日6时10分，由中国标准动车组承运的G8041次列车，从大连北站出发，沿哈大高铁开往沈阳站，这是中国标准动车组首次载客试运行。
+2017年1月3日，国家铁路局向中车长春轨道客车股份有限公司、中车青岛四方机车车辆股份有限公司颁发了中国标准动车组型号合格证和制造许可证。
+2017年6月25日，中国铁路总公司总经理陆东福在北京动车段宣布中国标准动车组定名为“复兴号”，并于6月26日上午从北京南站和上海虹桥站同时对开首发。
+2017年7月27日，根据中国铁路总公司安排，复兴号动车组在京沪高铁开展了时速350公里实车、实重和实速检验检测、可行性研究和运营安全评估，并组织两院院士、铁路专家进行了评审咨询。此次试验活动共计300余人参加。通过全面系统的科学论证和综合评估，京沪高铁满足设计时速每小时350公里的运营要求。</p>
+
+<h2 id="技术特点">技术特点</h2>
+
+<h3 id="动力配置">动力配置</h3>
+<p>采用8辆编组，4动4拖的统一动力配置形式，由2个基本动力单元组成。通过调整电机特性，可在动力单元配置及网络控制等基本不变的情况下，满足不同速度目标值对牵引能力的需求，可通过不同动力单元的组合，实现灵活编组，满足不同的客流需要。</p>
+
+<h3 id="牵引系统">牵引系统</h3>
+<p>采用大功率IGBT元器件构成的交直交传动牵引系统，通过提高中间直流环节电压，提高效率，降低损耗，改善电机控制特性，提升单位质量下的牵引输出功率。充分利用元器件性能，在牵引功率基础上显著提高电制动功率。利用移相技术有效控制谐波，保证再生能量的回收质量，降低总能耗。</p>
+
+<h3 id="制动系统">制动系统</h3>
+<p>采用微机控制的直通式电空制动系统及大容量基础制动装置，具备以整列车进行空电复合控制的能力，可按模式曲线精确控制列车减速或停车。由制动系统实施列车制动力的管理、计算和分配，优化防滑控制逻辑，充分利用黏着及电制动，缩短制动距离，减少盘片磨损。</p>
+
+<h3 id="网络控制系统">网络控制系统</h3>
+
+<p>四方制CR400AF-0207（左）与长客制CR400BF-0503（右）重联状态下的车钩，摄于北京西站
+采用列车级（WTB）和车辆级（MVB）组成的两级网络结构，按照适应中国铁路实际的控制策略，自主开发列车网络控制系统。列车增设诊断以太网，全面加强故障诊断和监测数据的传输，并提供向地面实时传输数据的功能，使列车的智能化程度大幅提升，实现不同厂家生产的相同速度等级动车组重联运营，不同速度等级的动车组互相救援。</p>
+
+<h3 id="转向架">转向架</h3>
+<p>采用模块化设计的H形构架无摇枕转向架，强化结构及性能的安全冗余设计。统一采用920 mm的大轮径及磨耗型踏面，改善轮轨匹配关系，优化转向架两系悬挂参数，降低簧下质量，减轻轮轨动力作用，提高运行稳定性、舒适性及结构安全性。实现轮对等主要部件的统型互换。</p>
+
+<h3 id="辅助供电系统">辅助供电系统</h3>
+<p>采用中国标准制式的AC380 V/50 Hz辅助供电系统，具有自动平衡负载和冗余供电功能，辅助变流器由牵引变流器中间直流环节供电，实现过分相不断电、无动力回送/救援工况时自发电功能。研发锂电池直流供电系统，提升单位质量供电能力。</p>
+
+<h3 id="高压系统">高压系统</h3>
+<p>采用主动控制受电弓，高压设备外绝缘的雷电冲击耐受电压提升至185 kV，采用整体密闭的高压箱结构，除受电弓外，其余高压部件不暴露于运行环境中，以改善高压系统部件的工作环境，提高系统在不同网高和不同环境下的工作可靠性，实现日常运用的免维护。</p>
+
+<h3 id="车体">车体</h3>
+
+<p>CR400AF-0207驶经手帕口道口</p>
+
+<p>中车长春轨道客车制造的CR400BF-0503驶出北京西站，2017年2月
+根据澳大利亚Industrial Design Alliance公司网站介绍，该公司于2014年承担了CR400BF外形和内饰的设计。中国标准动车组列车采用大型中空铝型材焊接而成的高强度、轻量化车体，统一车体长度为25000 mm，车体最大宽度为3360 mm，车辆高度为4050 mm，空调等设备采取嵌入化设计，实现列车纵断面的平顺化，全新设计流线型车头，进一步降低高速运行时的阻力。设计防撞吸能结构和装置，提高安全防护性能。</p>
+
+<h3 id="涂装">涂装</h3>
+<p>CR400AF的2列样板车（0207和0208）采用白色底色搭配侧窗上方蓝色线条的涂装，而从量产车2001起则改为银色底色搭配侧窗前方及下方红色线条的涂装。
+CR400BF的3列样板车（0503、0305和0507）采用白色底色搭配前窗两侧金色色块及侧窗下方金色线条的涂装，而从量产车5001起则改为白色底色搭配前窗周围及侧窗下方金色线条的涂装。</p>
+
+<p>旧涂装CR400AF-0207承运的G65次列车驶出北京西站，2017年2月25日</p>
+
+<p>新涂装CR400AF-2001承运的G123次列车驶出北京南站，2017年6月26日</p>
+
+<p>旧涂装CR400BF-0305于北京环形铁道，2017年3月28日</p>
+
+<p>新涂装CR400BF-5002担当的G3次列车驶出北京南站，2017年9月21日</p>
+
+<h3 id="旅客界面">旅客界面</h3>
+<p>旅客界面设计坚持以人为本，运用人机工程学合理设计旅客乘坐空间、占用空间、通过空间和乘降空间。按照旅客旅行生理需求、卫生需求、休闲娱乐需求，合理分配资源，统筹安排饮水、卫生、集便排污、空调和旅客信息与影音系统设计，其中空调系统将充分考虑免受各种高速运行工况下车外压力波的影响。通过合理的旅客界面设计，如在试车中将二等座椅间距统一加大到1020mm、一等座椅间距加大到1160mm、设置不间断的旅客用220V电源插座等具体设计，最大限度保证旅客的乘坐舒适性，并缓解旅途疲劳[14]。</p>
+
+<p>CR400AF的商务座
+CR400AF的一等座
+CR400AF二等座车吊顶设有氛围灯
+CR400AF的二等座
+CR400BF的商务座
+CR400BF的一等座
+CR400BF的二等座
+CR400BF的吧台</p>
+
+<h3 id="运用状况">运用状况</h3>
+
+<p>2017年7月27日，CR400AF-2005在京沪高速铁路完成时速350公里试验后返回动车所</p>
+
+<p>CR400AF-2003担当的C2079次列车通过玉蜓桥（2017年8月21日）</p>
+
+<p>2017年10月17日，配属广铁集团广州南动车所的CR400AF-2022通过京九线农服所道口，准备担当首班由CR400AF担当的G79次列车
+截至2016年11月，共有5列标准动车组下线，其中包括由四方生产的标准动车组样车2列（编号为CRH-0207，CRH-0208）、由长客生产的标准动车组样车2列（编号为CRH-0503，CRH-0507）和唐山生产的标准动车组样车1列（编号为CRH-0305）。
+2017年1月3日，国家铁路局向中车青岛四方机车车辆股份有限公司和中车长春轨道客车股份有限公司颁发了中国标准动车组型号合格证和制造许可证。型号分别定为：CR400AF和CR400BF。[10]
+2017年2月25日起，中国标准动车组CR400AF和CR400BF隔日重联承担北京西至广州南的G65/68次列车的运输任务，铁路部门将根据这次运营的情况跟踪和旅客反馈，对后续生产的列车做出进一步改进[15]。其间7月3日到7月22日曾调往京沪高铁调试。
+2017年6月26日，中国标准动车组开始承担京沪高速动车组列车[11]任务，当日始发车次为双向首发的G123次（下行列车）和G124次（上行列车）[16]。根据运行安排，在6月26日至6月30日间，中国标准动车组承运G123/156次列车和G155/124次列车的运输任务；自7月1日起，将有4对京沪高速列车使用中国标准动车组运行，分别为G1/G142次、G107/G4次、G143/G2次和G3/G12次[17]。
+2017年7月27日，根据中国铁路总公司安排，复兴号动车组在京沪高铁开展了时速350公里的体验运营。待2017年9月21日京沪高铁实施新的列车运行图后，复兴号动车组将按时速350公里正式上线运营[12]。这2个试验车次分别是G350727次和G727350次[18]。
+2017年8月16日，中国铁路总公司宣布，为配合习近平总书记关于京津冀协同发展“加快构建快速、便捷、高效、安全、大容量、低成本的互联互通综合交通网络”的指示要求，自8月21日起，扩大复兴号动车组列车开行范围，在京津冀地区安排开行22.5对复兴号动车组列车，通达北京南、武清、天津、北京西、涿州东、高碑店东、高邑西、保定东、石家庄、邢台东等10个车站[19]，其中19.5对为京津城际列车，其余2对为京石高速列车、1对为京广高速列车（已于2017年2月25日起开始担当）[20]。未来复兴号动车组列车的开行范围还将扩大至待开通的京张城际铁路，并对京沪高铁的开行范围作进一步扩大[21]。
+2017年8月20日，中国铁路总公司宣布，将于9月21日实行新的列车运行图。届时将安排7对复兴号动车组在京沪高铁以时速350公里运行，分别担当G1/G2、G3/G4、G5/G6、G7/G8、G9/G10、G13/G14、G17/G18次[22]。
+根据上海铁路局统计，在复兴号开始担当京沪高速动车组列车的3个月内，上座率达到了95%[23]。
+随着复兴号动车组正式进入广铁集团车队，2017年9月29日，复兴号动车组开始在广深港高速铁路运行。在2017年国庆黄金周期间，每天共有5对复兴号列车在广深港高速铁路运行，分别担当广州南至深圳北G9731∕9732次、G9733∕9734次、G9735∕9736次3对，广州南至长沙南G6110∕6119次1对，广州南至岳阳东G6132∕1次1对[24]，2017年10月16日投入京广高铁运营，担当福田至北京西的G80/79次列车[25]。</p>
+
+<h3 id="配属概况">配属概况</h3>
+<p>直至2017年9月，32列中国标准动车组列车已出厂，其中17列为CR400AF、15列为CR400BF，其中15列配属北京铁路局、12列配属上海铁路局、5列配属广州铁路集团。
+在采购方面，2017年4月，中国铁路总公司采购了50列中国标准动车组；同年8月再采购104列。自中国标准动车组获得型号合格证以来，铁总采购的标动数量已达154列[26]。
+配属	数量	动车组编号	运用所	运用线路	承运车次/交路
+CR400AF
+北京铁路局	12	0207、0208	北京南	京广高铁	承运北京西-广州南G65/G68次列车。
+2001～2010	京沪高铁、京津城际铁路	现固定承运北京南-上海虹桥G1/G4、G7/G6、G13/G18次列车
+广州铁路集团	5	2022、2024、2026～2028	广州南	京广高铁、广深港高铁	
+CR400BF
+北京铁路局	3	0305、0503、0507	北京南	京广高铁	0507、0503分别和0208、0207重联承运北京西-广州南G65/G68次列车，0305承运北京西-石家庄G9061/G9062/G9063/G9064次列车。
+上海铁路局	12	5001～5010、5016、5017	上海虹桥	京沪高铁、沪宁城际铁路、宁安客运专线	现固定承运北京南-上海虹桥G2/G3、G8/G5、G10/G9、G14/G17次列车</p>
+
+<h3 id="列车编组">列车编组</h3>
+<p>车厢型号
+ZY：一等座车（First Class Coach）
+ZE：二等座车（Second Class Coach）
+ZEC：二等座车／餐车（Second Class Coach／Dining Car）
+ZYS：一等／商务座车（First Class／Business Coach）
+ZES：二等／商务座车（Second Class／Business Coach）
+英文字母意思
+Z：Zuo（拼音），座，座车
+Y：Yi（拼音），一，一等
+E：Er（拼音），二，二等
+C／CA：Can（拼音），餐，餐车
+S／SW：Shang（拼音），商，商务
+车厢号	1	2	3	4	5	6	7	8
+车型	一等/商务座车	二等座车	二等座车/餐车	二等座车	二等/商务座车
+车辆编号（CR400AF）	CR400AF-xxxx
+ZYS xxxx01	ZE xxxx02	ZE xxxx03	ZE xxxx04	ZEC xxxx05	ZE xxxx06	ZE xxxx07	CR400AF-xxxx
+ZES xxxx00
+车辆编号（CR400BF）	CR400BF-xxxx
+ZYS xxxx01	ZE xxxx02	ZE xxxx03	ZE xxxx04	ZEC xxxx05	ZE xxxx06	ZE xxxx07	CR400BF-xxxx
+ZES xxxx00
+动力配置	拖车
+带驾驶室（Tc）	动车（M）	拖车，带受电弓（Tp）	动车（M）	动车（M）	拖车，带受电弓（Tp）	动车（M）	拖车
+带驾驶室（Tc）
+定员	5+28	85/90	85/90	75/80	63/68	85/90	85/90	5+40/45
+动力单元	单元1	单元2
+列车编号（0207、0208、0305、0503、0507、2001～2005、5001～5005）。量产型的第一种2，3，6，7车定员90人，第二种4,5，8车再各增加5人</p>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>“中国标准”动车组正式下线 时速350公里(图)
+拥有完全自主知识产权试验最高时速420公里 复兴号——中国智造“国家名片”. 解放日报. 2017-06-27.
+“时速350公里中国标准动车组下线 Archive.is的存档，存档日期2015-10-17
+新华社. “复兴号”来了 中国标准动车组时代来了. 南方新闻网. 广州. 2017-06-27 [2017-06-29] “‘复兴号’是基于中国自主研发的高速动车组设计制造平台，是中国具有完全知识产权的新一代高速列车。”中国铁路总公司总经理陆东福说。
+最新版中国高铁大揭秘，“复兴号”来了！. 人民网. 2017-06-25.
+路炳阳. 中国标动明日京沪高铁首发 命名复兴号. 财新网. 2017年6月25日 [2017-07-04].
+中国标准动车组综合试验取得成功. 新华网.
+中国标准动车组首次载客运行. 新华网.
+国家铁路局向中国标准动车组颁发许可证. 国家铁路局.
+中国标准动车组定名“复兴号”！明天京沪对开首发. 中国青年报.
+“复兴号”开展时速350公里体验运营 京沪高铁全程缩至4个半小时. 新华网.
+IDA TRANSPORT DESIGN PORTFOLIO.
+胡亚东. 坚持自主创新道路积极推进中国标准动车组研制. 2014-09-29.
+中国标准动车组样车上线运营. 新华社. 2017-02-05.
+“复兴号”京沪双向首发. 新华社. 2017-06-26.
+复兴号京沪高铁首发：时速可超400公里 将批量生产. 新浪综合. 2017-06-26.
+“复兴号”预计9月率先在京沪线以350公里时速运营，今天率先体验. 上观新闻. 2017-07-27.
+“复兴号”扩大开行 为京津冀一体化亮旗. 中国网. 2017-08-16.
+京津冀迎来“复兴号”动车组 涉及京津城际列车. 天津日报. 2017-08-17.
+财新：中铁总再购百列复兴号 用于京沪京张高铁. 财新. 2017-08-15.
+铁总：9月21日起7对复兴号京沪高铁运营 时速350公里. 腾讯财经. 2017-08-20.
+京沪高铁复兴号正式提速开跑 车厢有WiFi上座率达95%. 劳动报. 2017-09-22.
+中国新闻网. “复兴号”动车组在广深港高铁开跑. news.sina.com.cn. [2017-09-29].
+鞠頔; 周凯. 武汉站首迎京广高铁”复兴号” 最高时速310公里. 长江日报. 2017-10-17 [2017-10-17].
+中铁总再购百列复兴号 采购总价共178亿元左右. 证券时报·e公司. 2017-08-15.</p>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/05/25/service/" data-toggle="tooltip" data-placement="top" title="关于提高高速铁路客运服务质量的思考">
+                        Previous<br>
+                        <span>关于提高高速铁路客运服务质量的思考</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/07/22/CRID/" data-toggle="tooltip" data-placement="top" title="和谐号电力动车组">
+                        Next<br>
+                        <span>和谐号电力动车组</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+                
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#CRH" title="CRH" rel="5">
+                                    CRH
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#转载" title="转载" rel="7">
+                                    转载
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://www.peoplerail.com/rail/index.html">人民铁道网</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "halukasama";
+    var disqus_identifier = "/2017/06/20/CRI";
+    var disqus_url = "http://localhost:4000/2017/06/20/CRI/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; HOME 2017
+                    <br>
+                    Theme by <a href="https://github.com/halukasama/halukasama.github.io">halukasama</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=halukasama&repo=halukasama.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="img/breg.jpg" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "十九大"
+title: "十九大专题"
 description: "立足岗位、务实创新、牢记初衷，不忘使命"
-header-img: "img/about.jpg"
+header-img: "gimg/19da.jpg"
 ---
 
 在万众瞩目的“中国共产党第十九次全国代表大会在北京人民大会堂隆重开幕”之际；  
@@ -58,4 +58,4 @@ header-img: "img/about.jpg"
 为祖国的伟大复兴作出贡献，并实现自己的中国梦！
 
 
-                                                                                作者名 2017.10.20
+                                                                                张卜文 2017.10.20
