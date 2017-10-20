@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords"  content="铁路, 客运段, 动车组">
+    <meta name="theme-color" content="#000000">
+
+    <title>十九大 - </title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/gimg/train.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/19/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">HOME</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">关于我们</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/gm/">荣耀风采</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/19/">十九大</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">标签</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from
+     * $toggle/$collapse will break global delegation.
+     *
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/about.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2 col-md-1 col-md-offset-1 ">
+                <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">-->
+                <div class="site-heading">
+                    <h1>十九大</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">立足岗位、务实创新、牢记初衷，不忘使命</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			<p>在万众瞩目的“中国共产党第十九次全国代表大会在北京人民大会堂隆重开幕”之际；<br />
+我G29车组集体组织收看开幕会，并聆听习主席代表第十八届中央委员会向大会所作的报告后，车组同事展开热议和讨论；<br />
+讨论过程中大家一致认为：<br />
+    <strong>学习十九大精神，既要从整体把握，又要抓住重点；</strong><br />
+    <strong>既要领会重大理论观点和战略思想，又要和自身岗位的具体实践结合起来；</strong><br />
+    <strong>立足岗位、务实创新、牢记初衷、不忘使命、为祖国的伟大复兴贡献自己的力量；</strong></p>
+
+<p>作为一个铁路人当我沉浸在<code class="highlighter-rouge">中国铁路迅猛发展已成为国家的名片</code>的光荣与喜悦中时，  <br />
+我的脑海里响起了一句<code class="highlighter-rouge">中国的铁路要中国人自己修！</code>。<br />
+一个身着礼服、利落的板寸头、右手插在裤袋的老爷爷坚定又沉稳的说道。<br />
+没错，那个人便是<code class="highlighter-rouge">詹天佑</code>，人们熟知的“铁路之父”。</p>
+<blockquote>
+  <p>今天，我们乘火车去八达岭，过青龙桥车站，可以看到一座铜像，那就是詹天佑塑像。</p>
+</blockquote>
+
+<p>小时候，我从课文中学习<code class="highlighter-rouge">詹天佑</code>强烈的爱国精神。<br />
+在遭受到外国人的嘲笑下，依然毅然的接受了修筑京张铁路的艰巨任务。    <br />
+参加工作，我加入了京广局G29车组这个大家庭后,我又看到了<code class="highlighter-rouge">詹天佑</code>的另外一面。<br />
+对于我们京广局，<code class="highlighter-rouge">詹天佑</code>这三个字更有特殊的意义:</p>
+<ul>
+  <li>他是武汉长江大桥的初期规划者，更是京广铁路南段(原粤汉铁路)的第一任总工程师；<br />
+将自己的敬业精神，深深刻印在我们京广南段的每一个铁轨中；</li>
+</ul>
+
+<p>历代京广铁路人靠着这种不折不挠，不怕困难，精益求精，刻苦用心，勇于探索，敢于争先的精神，<br />
+完成了<code class="highlighter-rouge">中国的铁路要中国人自己修</code>到<code class="highlighter-rouge">中国铁路迅猛发展已成为国家的名片</code>的转变，<br />
+而这一切都源于它的缔造者<code class="highlighter-rouge">詹天佑</code>。<br />
+在未来的日子里，我们还要靠着这种精神去实现<code class="highlighter-rouge">伟大的祖国复兴！</code></p>
+
+<h2 id="詹天佑的格言激励g29前行">詹天佑的格言激励G29前行</h2>
+
+<blockquote>
+  <p>只要千百万劳动者团结得象一个人一样，跟随本阶级的优秀人物前进，胜利也就有了保证。　</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">不忘使命</code>
+在上级党委和局段领导下，紧密团结在XXXX
+以服务人民XXX</p>
+
+<blockquote>
+  <p>镜以淬而日明，钢以炼而益坚，凡诸学术，进境无穷，驾轻就熟，乃有发明。　</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">立足岗位</code>：抖标准和开会内容之类的，安全生产，服务为本阿之类的<br />
+<code class="highlighter-rouge">务实创新</code>：提升自己的业务能力，的东西写一些</p>
+
+<blockquote>
+  <p>生命有长短，命运有沉升……所幸我的生命，能化成匍匐在华夏大地上的一根铁轨，便是我人生中的莫大幸事。</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">牢记初衷</code>：说点自己的惨兮兮的事，并表达所作的牺牲和不后悔的态度</p>
+
+<p>十九大代表,也是“老铁路人”李昌勤会后接受采访时说：</p>
+<blockquote>
+  <p>作为一名铁路人，我将认真地贯彻好会议的精神，一定要确保安全，提高服务质量，为广大旅客出行带来便利的条件和环境，在中华民族伟大复兴梦的征途中，彰显铁路人的先行精神。“</p>
+</blockquote>
+
+<h2 id="这也代表了我们这些工作在平凡岗位众多铁路人的心声">这也代表了我们这些工作在平凡岗位众多铁路人的心声。</h2>
+
+<p>最后祝愿十九大顺利召开并圆满成功，在党和国家领导人的英明领导下，<br />
+为祖国的伟大复兴作出贡献，并实现自己的中国梦！</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                                                            作者名 2017.10.20
+</code></pre></div></div>
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#ONVIF" title="ONVIF" rel="10">
+                                    ONVIF
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/gimg/aboutus.jpg" />
+                        
+                        
+                            <p>年轻的我们</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://www.peoplerail.com/rail/index.html">人民铁道网</a></li>
+                    
+                </ul>
+                
+    		</div>
+        
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; HOME 2017
+                    <br>
+                    Theme by <a href="https://github.com/halukasama/halukasama.github.io">halukasama</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=halukasama&repo=halukasama.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="img/breg.jpg" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
